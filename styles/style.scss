@@ -3,15 +3,21 @@
 $black: #252525;
 $white: #dadada;
 
+$breakpoint: 768px;
+
 @mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-html {
+* {
     scroll-behavior: smooth;
     font-size: 100%;
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -26,35 +32,28 @@ body {
 }
 
 h1 {
-    font-size: 2.488rem;
-}
-
-h2 {
-    font-size: 2.074rem;
-}
-
-h3 {
+    margin: 20px 0px 20px 0px;
     font-size: 1.728rem;
 }
 
-h4 {
+h2 {
+    margin: 18px 0px 18px 0px;
     font-size: 1.44rem;
 }
 
-h5 {
+h3 {
+    margin: 16px 0px 16px 0px;
     font-size: 1.2rem;
 }
 
 p {
+    margin: 14px 0px 14px 0px;
     font-size: 1rem;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
 a {
     color: $white;
@@ -76,15 +75,32 @@ header {
     .text_container {
         align-self: center;
 
-        text-align: center;
+        max-width: 768px;
 
-        h1 {
-            font-weight: 600;
+        padding: 10px;
+
+        @media (max-width: $breakpoint) {
+            h1 {
+                font-weight: 600;
+                font-size: 1.728rem;
+            }
+
+            p {
+                font-weight: 200;
+                font-size: 1.2rem;
+            }
         }
 
-        p {
-            font-weight: 200;
-            font-size: 1.728rem;
+        @media (min-width: $breakpoint) {
+            h1 {
+                font-weight: 600;
+                font-size: 2.488rem;
+            }
+
+            p {
+                font-weight: 200;
+                font-size: 1.728rem;
+            }
         }
     }
 
@@ -95,7 +111,14 @@ header {
         margin-bottom: 80px;
 
         a {
-            font-size: 1.44rem;
+            @media (max-width: $breakpoint) {
+                font-size: 1.2rem;
+            }
+
+            @media (min-width: $breakpoint) {
+                font-size: 1.44rem;
+            }
+
             text-decoration: none;
             color: $white;
 

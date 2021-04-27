@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-html {
+* {
   scroll-behavior: smooth;
   font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -14,35 +18,28 @@ body {
 }
 
 h1 {
-  font-size: 2.488rem;
-}
-
-h2 {
-  font-size: 2.074rem;
-}
-
-h3 {
+  margin: 20px 0px 20px 0px;
   font-size: 1.728rem;
 }
 
-h4 {
+h2 {
+  margin: 18px 0px 18px 0px;
   font-size: 1.44rem;
 }
 
-h5 {
+h3 {
+  margin: 16px 0px 16px 0px;
   font-size: 1.2rem;
 }
 
 p {
+  margin: 14px 0px 14px 0px;
   font-size: 1rem;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
 a {
   color: #dadada;
@@ -72,16 +69,30 @@ header .text_container {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  text-align: center;
+  max-width: 768px;
+  padding: 10px;
 }
 
-header .text_container h1 {
-  font-weight: 600;
+@media (max-width: 768px) {
+  header .text_container h1 {
+    font-weight: 600;
+    font-size: 1.728rem;
+  }
+  header .text_container p {
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
 }
 
-header .text_container p {
-  font-weight: 200;
-  font-size: 1.728rem;
+@media (min-width: 768px) {
+  header .text_container h1 {
+    font-weight: 600;
+    font-size: 2.488rem;
+  }
+  header .text_container p {
+    font-weight: 200;
+    font-size: 1.728rem;
+  }
 }
 
 header nav {
@@ -93,7 +104,6 @@ header nav {
 }
 
 header nav a {
-  font-size: 1.44rem;
   text-decoration: none;
   color: #dadada;
   border: 2px #dadada solid;
@@ -102,6 +112,18 @@ header nav a {
   margin: 2px 10px 10px 4px;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
+}
+
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header nav a {
+    font-size: 1.44rem;
+  }
 }
 
 header nav a:hover {
