@@ -121,10 +121,10 @@ header {
     }
 
     nav {
-        margin-top: 80px;
-        margin-bottom: 80px;
-
         @media (max-width: $breakpoint) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -132,6 +132,9 @@ header {
         }
 
         @media (min-width: $breakpoint) {
+            margin-top: 80px;
+            margin-bottom: 80px;
+
             display: flex;
             flex-direction: row;
             justify-content: space-between;
