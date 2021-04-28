@@ -89,7 +89,10 @@ header {
     .text-container {
         @include text-container($breakpoint);
 
-        margin-top: 10vh;
+        @media (min-width: $breakpoint) {
+            margin-top: 10vh;
+        }
+
         padding: 10px;
 
         @media (max-width: $breakpoint) {
@@ -239,7 +242,7 @@ section.contact-me {
 
 footer {
     p {
-        text-align: center; 
+        text-align: center;
     }
 }
 
