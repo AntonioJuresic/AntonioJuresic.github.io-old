@@ -218,8 +218,16 @@ section.contact-me {
   padding: 0px 10px 0px 10px;
 }
 
-section.contact-me p {
-  font-size: 1.2rem;
+@media (max-width: 768px) {
+  section.contact-me p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section.contact-me p {
+    font-size: 1.2rem;
+  }
 }
 
 section.contact-me p a {

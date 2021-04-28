@@ -207,7 +207,13 @@ section.contact-me {
     padding: 0px 10px 0px 10px;
 
     p {
-        font-size: 1.2rem;
+        @media (max-width: $breakpoint) {
+            font-size: 1rem;
+        }
+
+        @media (min-width: $breakpoint) {
+            font-size: 1.2rem;
+        }
 
         a {
             padding: 4px 8px 4px 8px;
@@ -233,7 +239,7 @@ section.contact-me {
 
 footer {
     p {
-        text-align: center;
+        text-align: center; 
     }
 }
 
