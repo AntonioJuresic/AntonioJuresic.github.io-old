@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
     <header>
         <div class="text-container">
             <h1>Hello, my name is <span style="color: #ffbf00;">Antonio</span>.</h1>
@@ -83,10 +86,10 @@
                             <p>Unity</p>
                         </li>
                         <li>
-                            <p>PHP</p>
+                            <p>MySQL</p>
                         </li>
                         <li>
-                            <p>MySQL</p>
+                            <p>PHP</p>
                         </li>
                     </ul>
                 </div>
@@ -127,3 +130,20 @@
 </body>
 
 </html>
+
+<script>
+    window.onscroll = function() {
+        let progressBar = document.getElementById("progressBar");
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+        let progress = (window.pageYOffset / totalHeight) * 100;
+
+        if(window.outerWidth < 769) {
+            progressBar.style.width = progress + "%";
+            progressBar.style.height = 10 + "px";
+        } else if(window.outerWidth >= 769) {
+            progressBar.style.width = 15 + "px";
+            progressBar.style.height = progress + "%";
+        }
+    }
+</script>

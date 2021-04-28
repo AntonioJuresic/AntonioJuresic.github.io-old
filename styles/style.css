@@ -68,11 +68,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100vh;
 }
 
 header .text-container {
   margin: 0 auto;
   max-width: 768px;
+  margin-top: 10vh;
   padding: 10px;
 }
 
@@ -241,5 +243,82 @@ section.contact-me p a:hover {
 
 footer p {
   text-align: center;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  #scrollPath {
+    left: 0px;
+    width: 100%;
+    height: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  #scrollPath {
+    right: 0px;
+    width: 15px;
+    height: 100%;
+  }
+}
+
+#progressBar {
+  position: fixed;
+  top: 0px;
+  background-color: #ffbf00;
+}
+
+@media (max-width: 768px) {
+  #progressBar {
+    left: 0px;
+    height: 10px;
+    /* JavaScript changes this value*/
+  }
+}
+
+@media (min-width: 769px) {
+  #progressBar {
+    right: 0px;
+    width: 15px;
+    /* JavaScript changes this value*/
+  }
+}
+
+#progressBar:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffbf00;
+}
+
+#progressBar:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffbf00;
 }
 /*# sourceMappingURL=style.css.map */
