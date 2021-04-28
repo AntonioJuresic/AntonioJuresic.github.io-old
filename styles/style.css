@@ -176,6 +176,7 @@ header nav a:hover {
 section.about-me {
   margin: 0 auto;
   max-width: 998px;
+  margin-bottom: 40px;
   padding: 0px 10px 0px 10px;
 }
 
@@ -193,7 +194,12 @@ section.about-me .flex-container {
 }
 
 section.about-me .flex-container .general-information p {
-  margin-left: 20px;
+  margin: 20px 0px 0px 20px;
+}
+
+section.about-me .flex-container .general-information p.text-small {
+  margin: 0px 0px 0px 25px;
+  font-size: 0.8rem;
 }
 
 section.about-me .flex-container .my-skills ul {
@@ -202,6 +208,10 @@ section.about-me .flex-container .my-skills ul {
 
 section.about-me .flex-container .my-skills ul li {
   margin-left: 20px;
+}
+
+section.my-work {
+  margin-bottom: 40px;
 }
 
 section.my-work .text-container {
@@ -219,6 +229,7 @@ section.my-work .work-showcase {
 section.contact-me {
   margin: 0 auto;
   max-width: 998px;
+  margin-bottom: 40px;
   padding: 0px 10px 0px 10px;
 }
 
