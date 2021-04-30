@@ -9,8 +9,6 @@
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.5;
@@ -18,26 +16,27 @@ body {
 }
 
 h1 {
-  margin: 20px 0px 20px 0px;
+  margin: 1.44rem 0px;
   font-size: 1.728rem;
+  font-weight: 600;
   color: #dadada;
 }
 
 h2 {
-  margin: 18px 0px 18px 0px;
+  margin: 1.2rem 0px;
   font-size: 1.44rem;
   font-weight: 600;
   color: #ffbf00;
 }
 
 h3 {
-  margin: 16px 0px 16px 0px;
+  margin: 1rem 0px;
   font-size: 1.2rem;
   color: #dadada;
 }
 
 p {
-  margin: 14px 0px 14px 0px;
+  margin: 0.833rem 0px;
   font-size: 1rem;
   color: #dadada;
 }
@@ -74,7 +73,7 @@ header {
 header .text-container {
   margin: 0 auto;
   max-width: 768px;
-  padding: 10px;
+  padding: 0.833rem;
 }
 
 @media (min-width: 768px) {
@@ -86,22 +85,22 @@ header .text-container {
 @media (max-width: 768px) {
   header .text-container h1 {
     font-size: 1.728rem;
-    font-weight: 600;
+    margin: 1.44rem 0;
   }
   header .text-container p {
     font-size: 1.2rem;
-    font-weight: 200;
+    margin: 1rem 0;
   }
 }
 
 @media (min-width: 768px) {
   header .text-container h1 {
     font-size: 2.488rem;
-    font-weight: 600;
+    margin: 2.074rem 0;
   }
   header .text-container p {
     font-size: 1.728rem;
-    font-weight: 200;
+    margin: 1.44rem 0;
   }
 }
 
@@ -138,10 +137,9 @@ header nav {
 }
 
 header nav a {
-  margin: 2px 10px 10px 4px;
+  margin: 0.579rem 0.833rem;
   border: 2px #dadada solid;
   border-radius: 5px;
-  padding: 4px 8px 4px 8px;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
@@ -149,12 +147,14 @@ header nav a {
 @media (max-width: 768px) {
   header nav a {
     font-size: 1.2rem;
+    padding: 0.579rem;
   }
 }
 
 @media (min-width: 768px) {
   header nav a {
     font-size: 1.44rem;
+    padding: 0.694rem;
   }
 }
 
@@ -168,8 +168,7 @@ header nav a:hover {
 section.about-me {
   margin: 0 auto;
   max-width: 998px;
-  margin-bottom: 40px;
-  padding: 0px 10px 0px 10px;
+  padding: 0.833rem;
 }
 
 section.about-me .flex-container {
@@ -185,73 +184,69 @@ section.about-me .flex-container {
           justify-content: space-between;
 }
 
-section.about-me .flex-container .general-information p {
-  margin: 20px 0px 0px 20px;
+section.about-me p {
+  margin: 1.2rem 0px 0px 1.2rem;
 }
 
-section.about-me .flex-container .general-information p.text-small {
-  margin: 0px 0px 0px 25px;
-  font-size: 0.8rem;
+section.about-me p.text-small {
+  margin: 0px 0px 0px 1.44rem;
+  font-size: 0.833rem;
 }
 
-section.about-me .flex-container .my-skills ul {
+section.about-me ul {
   color: #dadada;
 }
 
-section.about-me .flex-container .my-skills ul li {
-  margin-left: 20px;
+section.about-me ul li {
+  margin: 0px 0px 0px 1.44rem;
+}
+
+section.about-me ul li p {
+  margin: 0px;
 }
 
 section.my-work {
-  margin-bottom: 40px;
+  padding: 0.833rem;
 }
 
 section.my-work .text-container {
   margin: 0 auto;
   max-width: 998px;
-  padding: 0px 10px 0px 10px;
 }
 
 section.my-work .work-showcase {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0px 10px 0px 10px;
 }
 
 section.contact-me {
   margin: 0 auto;
   max-width: 998px;
-  margin-bottom: 40px;
-  padding: 0px 10px 0px 10px;
+  padding: 0.833rem;
 }
 
-@media (max-width: 768px) {
-  section.contact-me p {
-    font-size: 1rem;
-  }
-}
+section.contact-me p {
+  /*a {
+            padding: 0.402rem 0.579rem;
 
-@media (min-width: 768px) {
-  section.contact-me p {
-    font-size: 1.2rem;
-  }
+            border: 2px $amber solid;
+            border-radius: 5px;
+
+            color: $black;
+            background-color: $amber;
+            transition: background-color 0.5s;
+        }
+
+        a:hover {
+            color: $amber;
+            background-color: $black;
+            transition: background-color 0.5s;
+        }*/
 }
 
 section.contact-me p a {
-  padding: 4px 8px 4px 8px;
-  border: 2px #ffbf00 solid;
-  border-radius: 5px;
-  color: #252525;
-  background-color: #ffbf00;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-}
-
-section.contact-me p a:hover {
+  text-decoration: underline;
   color: #ffbf00;
-  background-color: #252525;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
 }
 
 footer p {

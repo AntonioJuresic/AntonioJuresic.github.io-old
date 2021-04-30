@@ -30,9 +30,6 @@ $showcase-container: 1200px;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -41,26 +38,27 @@ body {
 }
 
 h1 {
-    margin: 20px 0px 20px 0px;
+    margin: 1.44rem 0px;
     font-size: 1.728rem;
+    font-weight: 600;
     color: $white;
 }
 
 h2 {
-    margin: 18px 0px 18px 0px;
+    margin: 1.2rem 0px;
     font-size: 1.44rem;
     font-weight: 600;
     color: $amber;
 }
 
 h3 {
-    margin: 16px 0px 16px 0px;
+    margin: 1rem 0px;
     font-size: 1.2rem;
     color: $white;
 }
 
 p {
-    margin: 14px 0px 14px 0px;
+    margin: 0.833rem 0px;
     font-size: 1rem;
     color: $white;
 }
@@ -93,29 +91,29 @@ header {
             margin-top: 10vh;
         }
 
-        padding: 10px;
+        padding: 0.833rem;
 
         @media (max-width: $breakpoint) {
             h1 {
                 font-size: 1.728rem;
-                font-weight: 600;
+                margin: 1.44rem 0;
             }
 
             p {
                 font-size: 1.2rem;
-                font-weight: 200;
+                margin: 1rem 0;
             }
         }
 
         @media (min-width: $breakpoint) {
             h1 {
                 font-size: 2.488rem;
-                font-weight: 600;
+                margin: 2.074rem 0;
             }
 
             p {
                 font-size: 1.728rem;
-                font-weight: 200;
+                margin: 1.44rem 0;
             }
         }
     }
@@ -130,27 +128,27 @@ header {
             margin: 20px 0px 20px 0px;
         }
 
-        @media (min-width: $breakpoint) {  
-            flex-direction: row; 
+        @media (min-width: $breakpoint) {
+            flex-direction: row;
             margin: 80px 0px 80px 0px;
         }
 
         a {
-            margin: 2px 10px 10px 4px;
+            margin: 0.579rem 0.833rem;
 
             border: 2px $white solid;
             border-radius: 5px;
-
-            padding: 4px 8px 4px 8px;
 
             transition: background-color 0.5s;
 
             @media (max-width: $breakpoint) {
                 font-size: 1.2rem;
+                padding: 0.579rem;
             }
 
             @media (min-width: $breakpoint) {
                 font-size: 1.44rem;
+                padding: 0.694rem;
             }
         }
 
@@ -165,69 +163,60 @@ header {
 
 section.about-me {
     @include text-container($text-container);
-    
-    margin-bottom: 40px;
-    padding: 0px 10px 0px 10px;
+
+    padding: 0.833rem;
 
     .flex-container {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+    }
 
-        .general-information {
+    p {
+        margin: 1.2rem 0px 0px 1.2rem;
+    }
+
+    p.text-small {
+        margin: 0px 0px 0px 1.44rem;
+        font-size: 0.833rem;
+    }
+
+    ul {
+        color: $white;
+
+        li {
+            margin: 0px 0px 0px 1.44rem;
+
             p {
-                margin: 20px 0px 0px 20px;
-            }
-
-            p.text-small {
-                margin: 0px 0px 0px 25px;
-                font-size: 0.8rem;
-            }
-        }
-
-        .my-skills {
-            ul {
-                color: $white;
-
-                li {
-                    margin-left: 20px;
-                }
+                margin: 0px;
             }
         }
     }
 }
 
 section.my-work {
-    margin-bottom: 40px;
+    padding: 0.833rem;
 
     .text-container {
         @include text-container($text-container);
-        padding: 0px 10px 0px 10px;
     }
 
     .work-showcase {
         @include text-container($showcase-container);
-        padding: 0px 10px 0px 10px;
     }
 }
 
 section.contact-me {
     @include text-container($text-container);
-    
-    margin-bottom: 40px;
-    padding: 0px 10px 0px 10px;
+    padding: 0.833rem;
 
     p {
-        @media (max-width: $breakpoint) {
-            font-size: 1rem;
-        }
-
-        @media (min-width: $breakpoint) {
-            font-size: 1.2rem;
-        }
-
         a {
-            padding: 4px 8px 4px 8px;
+            text-decoration: underline;
+            color: $amber;
+        }
+        /*a {
+            padding: 0.402rem 0.579rem;
 
             border: 2px $amber solid;
             border-radius: 5px;
@@ -241,7 +230,7 @@ section.contact-me {
             color: $amber;
             background-color: $black;
             transition: background-color 0.5s;
-        }
+        }*/
     }
 }
 
