@@ -49,7 +49,7 @@
         <h2>About me</h2>
 
         <div class="flex-container">
-            <div id="general-information">
+            <div class="wide">
                 <div>
                     <h3>About me</h3>
                     <p>Name: Antonio Jurešić<br>Age: 21</p>
@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            <div id="languages" onload="function2">
+            <div class="narrow" style="width: 350px;">
                 <div>
                     <h3>Human languages</h3>
                     <ul>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div id="my-skills">
+            <div class="wide">
                 <h3>My skills</h3>
 
                 <ul>
@@ -102,7 +102,7 @@
                 </ul>
             </div>
 
-            <div id="my-hobbies">
+            <div class="narrow" style="width: 350px;">
                 <h3>My hobbies</h3>
 
                 <ul>
@@ -178,10 +178,4 @@
             progressBar.style.height = progress + "%";
         }
     }
-
-    console.log(document.getElementById("languages").offsetWidth);
-    console.log(document.getElementById("languages").clientHeight);
-
-    var width = document.getElementById("languages").clientHeight;
-    document.getElementById("my-hobbies").style.width = width + "px";
 </script>

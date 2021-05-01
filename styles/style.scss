@@ -172,6 +172,12 @@ section.about-me {
         justify-content: space-between;
     }
 
+    @media (max-width: $text-container) {
+        .wide {
+            width: 100%;
+        }
+    }
+
     p {
         margin: 1.2rem 0px 0px 1.2rem;
     }
