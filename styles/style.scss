@@ -208,7 +208,23 @@ section.my-work {
     }
 
     .work-showcase {
-        @include text-container($showcase-container);
+        @include text-container($text-container);
+    }
+
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        
+        .article-text, .article-image {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .article-image img {
+            @include flexCenter();
+            width: 80%;
+        }
     }
 }
 
