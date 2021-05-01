@@ -3,7 +3,7 @@
 $black: #252525;
 $white: #dadada;
 $amber: #ffbf00;
-$purple: #e100e1;
+$purple: #c500c5;
 
 $breakpoint: 768px;
 $text-container: 998px;
@@ -200,15 +200,26 @@ section.about-me {
     }
 }
 
-section.my-work {
+section.my-projects {
+    @include text-container($text-container);
+
     padding: 0.833rem;
 
-    .text-container {
-        @include text-container($text-container);
+    ul {
+        color: $white;
+
+        li {
+            margin: 0px 0px 0px 1.44rem;
+
+            p {
+                margin-left: 1.2rem;
+            }
+        }
     }
 
-    .work-showcase {
-        @include text-container($showcase-container);
+    a {
+        text-decoration: underline;
+        color: $amber;
     }
 }
 

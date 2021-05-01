@@ -211,18 +211,27 @@ section.about-me ul li p {
   margin: 0px;
 }
 
-section.my-work {
+section.my-projects {
+  margin: 0 auto;
+  max-width: 998px;
   padding: 0.833rem;
 }
 
-section.my-work .text-container {
-  margin: 0 auto;
-  max-width: 998px;
+section.my-projects ul {
+  color: #dadada;
 }
 
-section.my-work .work-showcase {
-  margin: 0 auto;
-  max-width: 1200px;
+section.my-projects ul li {
+  margin: 0px 0px 0px 1.44rem;
+}
+
+section.my-projects ul li p {
+  margin-left: 1.2rem;
+}
+
+section.my-projects a {
+  text-decoration: underline;
+  color: #ffbf00;
 }
 
 section.contact-me {
