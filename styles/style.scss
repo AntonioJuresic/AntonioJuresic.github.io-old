@@ -200,7 +200,8 @@ section.about-me {
     }
 }
 
-section.my-projects {
+section.work-experience,
+section.projects {
     @include text-container($text-container);
 
     padding: 0.833rem;
@@ -211,10 +212,24 @@ section.my-projects {
         li {
             margin: 0px 0px 0px 1.44rem;
 
+            h3 {
+                margin: 1.2rem 0rem 0rem 0rem;
+            }
+
             p {
-                margin-left: 1.2rem;
+                margin: 0rem 1.2rem;
+            }
+
+            p.text-small {
+                margin: 0rem;
+                font-size: 0.833rem;
             }
         }
+    }
+
+    ul.sub-list {
+        margin: 0px 0px 0px 1rem;
+        list-style-type: circle;
     }
 
     a {
@@ -223,7 +238,7 @@ section.my-projects {
     }
 }
 
-section.contact-me {
+section.contact {
     @include text-container($text-container);
     padding: 0.833rem;
 
@@ -232,22 +247,6 @@ section.contact-me {
             text-decoration: underline;
             color: $amber;
         }
-        /*a {
-            padding: 0.402rem 0.579rem;
-
-            border: 2px $amber solid;
-            border-radius: 5px;
-
-            color: $black;
-            background-color: $amber;
-            transition: background-color 0.5s;
-        }
-
-        a:hover {
-            color: $amber;
-            background-color: $black;
-            transition: background-color 0.5s;
-        }*/
     }
 }
 

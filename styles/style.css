@@ -211,55 +211,58 @@ section.about-me ul li p {
   margin: 0px;
 }
 
-section.my-projects {
+section.work-experience,
+section.projects {
   margin: 0 auto;
   max-width: 998px;
   padding: 0.833rem;
 }
 
-section.my-projects ul {
+section.work-experience ul,
+section.projects ul {
   color: #dadada;
 }
 
-section.my-projects ul li {
+section.work-experience ul li,
+section.projects ul li {
   margin: 0px 0px 0px 1.44rem;
 }
 
-section.my-projects ul li p {
-  margin-left: 1.2rem;
+section.work-experience ul li h3,
+section.projects ul li h3 {
+  margin: 1.2rem 0rem 0rem 0rem;
 }
 
-section.my-projects a {
+section.work-experience ul li p,
+section.projects ul li p {
+  margin: 0rem 1.2rem;
+}
+
+section.work-experience ul li p.text-small,
+section.projects ul li p.text-small {
+  margin: 0rem;
+  font-size: 0.833rem;
+}
+
+section.work-experience ul.sub-list,
+section.projects ul.sub-list {
+  margin: 0px 0px 0px 1rem;
+  list-style-type: circle;
+}
+
+section.work-experience a,
+section.projects a {
   text-decoration: underline;
   color: #ffbf00;
 }
 
-section.contact-me {
+section.contact {
   margin: 0 auto;
   max-width: 998px;
   padding: 0.833rem;
 }
 
-section.contact-me p {
-  /*a {
-            padding: 0.402rem 0.579rem;
-
-            border: 2px $amber solid;
-            border-radius: 5px;
-
-            color: $black;
-            background-color: $amber;
-            transition: background-color 0.5s;
-        }
-
-        a:hover {
-            color: $amber;
-            background-color: $black;
-            transition: background-color 0.5s;
-        }*/
-}
-
-section.contact-me p a {
+section.contact p a {
   text-decoration: underline;
   color: #ffbf00;
 }
